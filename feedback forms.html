@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body bgcolor="lightgreen" link="black" vlink="darkslateblue" alink="red">
+
+    <h1 align="center">STUDENT FEEDBACK FORM</h1>
+
+    <center>
+        <br><br>
+
+        <form>
+            <table border="1" cellpadding="8" cellspacing="0" bgcolor="white">
+                <tr>
+                    <td><label for="sname"><b>Student Name:</b></label></td>
+                    <td><input type="text" id="sname" name="student_name" placeholder="Enter your name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="class"><b>Class:</b></label></td>
+                    <td>
+                        <select id="class" name="class">
+                            <option value="10th">10th</option>
+                            <option value="9th">9th</option>
+                            <option value="8th">8th</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Gender:</b></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="subject"><b>Concerned Subject:</b></label></td>
+                    <td>
+                        <select id="subject" name="subject_concern">
+                            <option value="Hindi">Hindi</option>
+                            <option value="English">English</option>
+                            <option value="SST">SST</option>
+                            <option value="Maths">Maths</option>
+                            <option value="Science">Science</option>
+                            <option value="Computer">Computer (165)</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="problem"><b>Problem / Suggestion:</b></label></td>
+                    <td>
+                        <textarea id="problem" name="problem_suggestion" rows="5" cols="35" placeholder="Write your problem or suggestion here..."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit Feedback">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+</body>
+</html>
